@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="CSS/CSS.css"> 
+      <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+      <title>
+        Portfólio Daniel Gomes Falcão
+      </title>
+    </head>
+    <body>
+      <div class="col-s-12 col-12 container">
+       <div class="row">
+       <header>
+        <h1 id="inicio" class="h"> Olá,<br> Eu sou Daniel, <br> Programador e <br> Web designer. </h1>
+
+       </header>
+       <nav>
+          <a href="#inicio"> Inicio </a>
+          <a href="#sobre"> Sobre </a>
+          <a href="#habilidades"> Habilidades </a>
+          <a href="#trabalhos"> Trabalhos </a>
+          <a href="#contato"> Contato </a>
+       </nav>
+       <section>
+        <fieldset id="sobre">
+        <h2 id="habilidades" class="h"> Sobre </h2>
+          <h3 class="hsubtitulo"> Daniel Gomes Falcão </h3>
+            <p> Estudante do primeiro período de Sistemas de Computação na UFF - Universidade Federal Fluminense. O objetivo deste site é mostrar meus projetos de programação e web designer. </p>
+       </fieldset>
+        <h2 id="trabalhos" class="h"> Habilidades </h2>
+            <button class="collapsible"> HTML <ion-icon name="logo-html5"></ion-icon> </button>
+            <div class="content">
+             <p> HTML é uma das linguagens que utilizamos para desenvolver websites. O acrônimo HTML vem do inglês e significa Hypertext Markup Language ou em português Linguagem de Marcação de Hipertexto. </p>
+            </div>
+            <button class="collapsible"> CSS <ion-icon name="logo-css3"></ion-icon> </button>
+            <div class="content">
+              <p> Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web. Em vez de colocar a formatação dentro do documento, o CSS cria um link para uma página que contém os estilos. Quando quiser alterar a aparência do portal, basta modificar apenas um arquivo.</p>
+            </div>
+            <button class="collapsible"> Javascript <ion-icon name="logo-javascript"></ion-icon> </button>
+            <div class="content">
+              <p> JavaScript, frequentemente abreviado como JS, é uma linguagem de programação interpretada de alto nível, caracterizada também, como dinâmica, fracamente tipada, prototype-based e multi-paradigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web. </p>
+            </div>
+            <button class="collapsible"> Python <ion-icon name="logo-python"></ion-icon> </button>
+            <div class="content">
+              <p> Python é uma linguagem de programação de alto nível, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. </p>
+            </div>
+            <button class="collapsible"> R </button>
+            <div class="content">
+              <p> R é um ambiente computacional e uma linguagem de programação que vem progressivamente se especializando em manipulação, análise e visualização gráfica de dados. Na atualidade é considerado o melhor ambiente computacional para essa finalidade.</p>
+            </div>
+            <script src="JAVASCRIPT/Javascript.js"></script>
+        <h2 class="h"> Trabalhos </h2>
+          <div class="fileira">
+              <div class="coluna">
+                <a target="_blank" href="https://byssal-props.000webhostapp.com/"> 
+                  <img src="IMG/Trabalho-1.png" alt="Rio 200 Graus" style="width:100%">
+               </a>
+               <div class="legenda"> <p> Rio 200 Graus - Forno e Fogão </p> </div>
+              </div>
+               <div class="coluna">
+                <img src="">
+              </div>
+               <div class="coluna">
+                <img src="">
+              </div>
+          </div>
+           <div class="fileira">
+              <div class="coluna">
+                <img src="">
+              </div>
+               <div class="coluna">
+                <img src="">
+              </div>
+               <div class="coluna">
+                <img src="">
+              </div>
+          </div>
+        <fieldset id="contato">
+        <h2 class="h"> Entre em contato </h2>
+        <fieldset class="alinhamFdEsq">
+        <div class="contato">
+          <img src="IMG/phone-icon.png" class="icone icone1">
+          <h4 class="espaco2"> Telefone </h4>
+            <p class="espaco3"> +55 (21) 99361-9393  </p> 
+          <img src="IMG/email-icon.png" class="icone">
+          <h4 class="espaco2"> E-mail </h4>
+            <p class="espaco3"> danielgomesfalcao@gmail.com </p>
+        </div>
+        </fieldset>
+        <fieldset class="alinhamFdDir">
+        <div>
+        <form action="contato.php" method="post">
+          <div class="alinhamEsq">
+            <input type="text" name="nome" placeholder="Nome*" required="required">
+          </div>
+          <div class="divEmail ">
+            <input type="email" name="email" placeholder="E-mail*" required="required">
+          </div>
+          <br>
+          <div class="divAssunto">
+            <input type="text" name="assunto" placeholder="Assunto">
+          </div>
+          <br>
+          <div class="alinhamEsq">
+            <textarea name="mensagens" rows="18" cols="60" placeholder="Mensagem*" required="required"> </textarea>
+          </div>
+          <input class="botoes" type="submit" value="Enviar mensagem">
+         </form>
+        </div>
+       </fieldset>
+       </fieldset>
+       </section>
+       <footer>
+        <p>  Copyright &copy; Daniel Gomes Falcão | Todos os direitos reservados.</p>
+       </footer>
+     </div>
+    </div>
+    </body>
+</html>
