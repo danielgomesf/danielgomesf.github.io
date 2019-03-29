@@ -75,6 +75,20 @@ fieldset {
 .hsubtitulo {
 	font-size: 26px;
 }
+
+div .botoes2 {
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  background: #000000;
+  color: #F8F8FF;
+  padding: 10px 10px;
+  clear: both;
+}
+span a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
 /*botões*/
 
 .collapsible {
@@ -234,3 +248,4 @@ input[type=submit]:hover {
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 }
+
