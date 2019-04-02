@@ -75,7 +75,7 @@ fieldset {
 .hsubtitulo {
 	font-size: 26px;
 }
-
+@media only screen and (min-width: 768px) {
 div .botoes2 {
   width: 100px;
   text-align: center;
@@ -84,6 +84,12 @@ div .botoes2 {
   color: #F8F8FF;
   padding: 10px 10px;
   clear: both;
+}
+}
+@media only screen and (max-width: 767px) {
+div .botoes2 {
+  display: none;
+}
 }
 span a {
   color: #FFFFFF;
