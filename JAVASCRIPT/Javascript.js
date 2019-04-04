@@ -12,3 +12,14 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+{
+function abrirmenu() {
+
+var x = document.getElementById ("meuNav")
+   if (x.className === "menu") {
+   	x.className +=  " responsivo";
+   }
+   else {x.className = "menu"}
+} 
+}
