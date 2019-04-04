@@ -216,6 +216,15 @@ input[type=submit]:hover {
   clear: both;
   margin-top: 20px;
 }
+.botoes a {
+  text-decoration: none;
+  color: #F8F8FF;
+  display: inline;
+}
+.alinharbotoes {
+  clear: none;
+  float: none;
+}
 .divEmail {
 	float: right;
 }
