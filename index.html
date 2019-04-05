@@ -128,18 +128,22 @@
         <div>
         <form action="contato.php" method="post">
           <div class="alinhamEsq">
-            <input type="text" name="nome" placeholder="Nome*" required="required">
+            <label for="nome"></label>
+            <input type="text" name="nome" id ="nome" placeholder="Nome*" required="required">
           </div>
           <div class="divEmail ">
-            <input type="email" name="email" placeholder="E-mail*" required="required">
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="E-mail*" required="required">
           </div>
           <br>
           <div class="divAssunto">
-            <input type="text" name="assunto" placeholder="Assunto">
+            <label for="assunto"></label>
+            <input type="text" name="assunto" id="assunto" placeholder="Assunto">
           </div>
           <br>
           <div class="alinhamEsq">
-            <textarea name="mensagens" rows="18" cols="60" placeholder="Mensagem*" required="required"> </textarea>
+            <label for="mensagens"></label>
+            <textarea name="mensagens" rows="18" cols="60" id="mensagens" placeholder="Mensagem*" required="required"> </textarea>
           </div>
           <input class="botoes" type="submit" value="Enviar mensagem">
          </form>
