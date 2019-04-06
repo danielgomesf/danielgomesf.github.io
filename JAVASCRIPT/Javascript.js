@@ -49,3 +49,23 @@ window.onclick = function(event) {
   }
 }
 }
+{function contato(value) {
+    var a = { 
+      apiKey: "AIzaSyAdqNXW1saxRPpIxBdVArnEOQ1Ow3eLbx8",
+	    authDomain: "discourse-skcript.firebaseapp.com",
+	    databaseURL: "https://discourse-skcript.firebaseio.com",
+	    projectId: "discourse-skcript",
+	    storageBucket: "discourse-skcript.appspot.com",
+	    messagingSenderId: "592087480717" };
+    firebase.initializeApp(a);
+    var b = firebase.database().ref("messages");
+        $("#newContact").submit(function(a) { $(this), console.log("Submit to Firebase");
+        var c = $("#nome").val(),
+            d = $("#email").val(),
+            e = $("#assunto").val(),
+            f = $("#mensagens").val(),
+            g = { name: c, email: d, assunto: e,mensagens: f};
+        return b.push(g).then(function(a) { 
+            $(".sucess").css("display", "block"), 
+            $(".sucess-none").css("display", "none") }), !1 })   
+}}
