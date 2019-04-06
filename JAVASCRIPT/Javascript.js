@@ -50,7 +50,7 @@ window.onclick = function(event) {
 }
 }
 //Firebase form
-{
+
 	var config = {
     apiKey: "AIzaSyDloshJSSsbQrCSloK9s8eL0yvfsNwxflA",
     authDomain: "forms-a195b.firebaseapp.com",
@@ -60,34 +60,50 @@ window.onclick = function(event) {
     messagingSenderId: "365707829612"
   	};
   	firebase.initializeApp(config);
-{	var messagesRef = firebase.database().ref('messages');}
-{
-	document.getElementById('newContact').addEventListener("submit", submitForm);
+
+// Reference messages collection
+var messagesRef = firebase.database().ref('messages');
+
+// Listen for form submit
+document.getElementById('contato').addEventListener('submit', submitForm);
+
+// Submit form
+function submitForm(e){
+  e.preventDefault();
+
+  // Get values
+  var nome = getInputVal('nome');
+  var email = getInputVal('email');
+  var assunto = getInputVal('assunto');
+  var mensagens = getInputVal('mensagens');
+
+// Function to get get form values
+function getInputVal(id){
+  return document.getElementById(id).value;
 }
-{	function getInputVal(id){
-		return document.getElementById(id).value;
-}}
-{
-	function submitForm(h){
-		h.preventDefault();
-}}
-{	var nome = getInputVal('nome');
-        email = getInputVal('email');
-        assunto = getInputVal('assunto');
-        menagens = getInputVal('mensagens');
+
+// Save message to firebase
+function saveMessage(nome, email, assunto, mensagens){
+  var newMessageRef = messagesRef.push();
+  newMessageRef.set({
+    nome:nome,
+    email:email,
+    assunto:assunto,
+    mensagens:mensagens
+  })
 }
-{	function saveMessage(nome, email, assunto, mensagens){
-  	var newMessageRef = messagesRef.push();
-  		newMessageRef.set({
-    	nome: nome,
-    	email:email,
-    	assunto:assunto,
-    	mensagens:mensagens
-  });
-{	saveMessage(nome, email, assunto, mensagens);}
-{	document.querySelector('.alert').style.display = 'block';}
-{ 	setTimeout(function(){
-    document.querySelector('.alert').style.display = 'none';
-  },3000);}
-{	document.getElementById('newContact').reset();}
-}}}
+  // Save message
+  saveMessage( nome, email, assunto, mensagens);
+
+  // Show alert
+  document.querySelector(".alerta").style.display = 'block';
+
+  // Hide alert after 3 seconds
+  setTimeout(function(){
+    document.querySelector(".alerta").style.display = 'none';
+  },3000);
+  // Clear form
+
+  document.formulario.reset();
+}
+

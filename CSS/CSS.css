@@ -243,7 +243,7 @@ input[type=text],textarea,input[type=email] {
 input[type=text],input[type=email] {
 	width: 300px;
 } 
-input[type=submit]:hover {
+button[type=submit]:hover {
   background-color: #696969;
 }
 .botoes {
@@ -289,6 +289,15 @@ input[type=submit]:hover {
   margin: 40px;
   float: right;
   display: inline;
+}
+.alerta{
+  text-align: center;
+  padding:10px;
+  background:#79c879;
+  color:#fff;
+  margin-bottom:10px;
+  display:none;
+  clear: right;
 }
 /*recursos responsividade*/
 * {

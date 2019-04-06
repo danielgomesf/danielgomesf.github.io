@@ -86,7 +86,7 @@
             <div class="content">
               <p> R é um ambiente computacional e uma linguagem de programação que vem progressivamente se especializando em manipulação, análise e visualização gráfica de dados. Na atualidade é considerado o melhor ambiente computacional para essa finalidade.</p>
             </div>
-            <script src="JAVASCRIPT/Javascript.js"></script>
+            
         <h2 class="h"> Trabalhos </h2>
           <div class="fileira">
               <div class="coluna">
@@ -127,7 +127,8 @@
         </fieldset>
         <fieldset class="alinhamFdDir">
         <div>
-        <form action="" method="post" id="newContact">
+        <form name="formulario" method="post" id="contato">
+          <div class="alerta"> Sua mensagem foi enviada!</div>
           <div class="alinhamEsq">
             <label for="nome"></label>
             <input type="text" name="nome" id ="nome" placeholder="Nome*" required="required">
@@ -146,7 +147,7 @@
             <label for="mensagens"></label>
             <textarea name="mensagens" rows="18" cols="60" id="mensagens" placeholder="Mensagem*" required="required"> </textarea>
           </div>
-          <input class="botoes" type="submit" value="Enviar mensagem">
+          <button class="botoes" type="submit"> Enviar mensagem </button>
          </form>
         </div>
        </fieldset>
