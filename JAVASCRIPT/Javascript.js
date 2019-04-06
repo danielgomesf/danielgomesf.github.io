@@ -49,23 +49,45 @@ window.onclick = function(event) {
   }
 }
 }
-{function contato(value) {
-    var a = { 
-     apiKey: "AIzaSyDloshJSSsbQrCSloK9s8eL0yvfsNwxflA",
+//Firebase form
+{
+	var config = {
+    apiKey: "AIzaSyDloshJSSsbQrCSloK9s8eL0yvfsNwxflA",
     authDomain: "forms-a195b.firebaseapp.com",
     databaseURL: "https://forms-a195b.firebaseio.com",
     projectId: "forms-a195b",
     storageBucket: "forms-a195b.appspot.com",
-    messagingSenderId: "365707829612" };
-    firebase.initializeApp(a);
-    var b = firebase.database().ref("messages");
-        $("#newContact").submit(function(a) { $(this), console.log("Submit to Firebase");
-        var c = $("#nome").val(),
-            d = $("#email").val(),
-            e = $("#assunto").val(),
-            f = $("#mensagens").val(),
-            g = { name: c, email: d, assunto: e,mensagens: f};
-        return b.push(g).then(function(a) { 
-            $(".sucess").css("display", "block"), 
-            $(".sucess-none").css("display", "none") }), !1 })   
+    messagingSenderId: "365707829612"
+  	};
+  	firebase.initializeApp(config);
+{	var messagesRef = firebase.database().ref('messages');}
+{
+	document.getElementById('newContact').addEventListener("submit", submitForm);
+}
+{	function getInputVal(id){
+		return document.getElementById(id).value;
 }}
+{
+	function submitForm(h){
+		h.preventDefault();
+}}
+{	var nome = getInputVal('nome');
+        email = getInputVal('email');
+        assunto = getInputVal('assunto');
+        menagens = getInputVal('mensagens');
+}
+{	function saveMessage(nome, email, assunto, mensagens){
+  	var newMessageRef = messagesRef.push();
+  		newMessageRef.set({
+    	nome: nome,
+    	email:email,
+    	assunto:assunto,
+    	mensagens:mensagens
+  });
+{	saveMessage(nome, email, assunto, mensagens);}
+{	document.querySelector('.alert').style.display = 'block';}
+{ 	setTimeout(function(){
+    document.querySelector('.alert').style.display = 'none';
+  },3000);}
+{	document.getElementById('newContact').reset();}
+}}}
