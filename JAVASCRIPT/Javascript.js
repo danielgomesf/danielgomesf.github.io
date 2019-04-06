@@ -51,12 +51,12 @@ window.onclick = function(event) {
 }
 {function contato(value) {
     var a = { 
-      apiKey: "AIzaSyAdqNXW1saxRPpIxBdVArnEOQ1Ow3eLbx8",
-	    authDomain: "discourse-skcript.firebaseapp.com",
-	    databaseURL: "https://discourse-skcript.firebaseio.com",
-	    projectId: "discourse-skcript",
-	    storageBucket: "discourse-skcript.appspot.com",
-	    messagingSenderId: "592087480717" };
+     apiKey: "AIzaSyDloshJSSsbQrCSloK9s8eL0yvfsNwxflA",
+    authDomain: "forms-a195b.firebaseapp.com",
+    databaseURL: "https://forms-a195b.firebaseio.com",
+    projectId: "forms-a195b",
+    storageBucket: "forms-a195b.appspot.com",
+    messagingSenderId: "365707829612" };
     firebase.initializeApp(a);
     var b = firebase.database().ref("messages");
         $("#newContact").submit(function(a) { $(this), console.log("Submit to Firebase");
