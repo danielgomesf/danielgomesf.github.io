@@ -206,6 +206,9 @@ i {
   width: 33.33%;
   padding: 5px;
 }
+.coluna:hover {
+  transform: scale(1.05);
+}
 .legenda {
   padding: 15px;
   text-align: center;
