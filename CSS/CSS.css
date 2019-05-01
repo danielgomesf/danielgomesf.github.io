@@ -89,7 +89,7 @@ width: 960px;
 }
 /*section*/
 
-p { 
+p , li { 
   font-size: 18px;
 }
 fieldset {
