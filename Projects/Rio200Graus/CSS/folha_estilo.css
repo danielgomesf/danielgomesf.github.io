@@ -1,0 +1,228 @@
+/*Página inicial*/
+
+header { 
+	display:block; 
+	margin-bottom: 1px; }
+nav { 
+	display:block; 
+	width: 150px; 
+	float: left; }
+section { 
+	display:block; 
+	width: 76%; 
+	float: right;}
+body {
+	background-color: #FFDD55;
+	color: #FF1111;
+	font-size: 16px;
+	font-family: 'Stoke','Verdana','Liberation' ;}
+nav {
+	margin-right: 10px;
+	font-weight: bold;
+	font-family: 'Stoke','Verdana','Liberation';}
+a {
+	text-decoration: none;
+}
+a:link {
+    color: #DD0000;
+}
+a:visited {
+	color: #CC0000;
+}
+ul,ol {
+    line-height: 200%;
+}
+ul {
+    list-style-type: disc;
+}
+nav ul {
+	color: #883322;
+	line-height: 230%;
+	margin-top: 40px;
+}
+
+/*classes página principal*/
+
+.ender {
+    text-align: right;
+    font-size: 15px;
+    line-height: 140%;
+    float: right;
+}   
+.imgLogo {
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    margin-bottom: 6px;
+    padding-bottom: 15px;
+}
+.apres {
+    text-align: center;
+    font-size: 18px;
+    width: 800px; /*adicionado para centralizar*/
+}
+
+/*acrescentado para página tipos.html*/
+
+.listaTipos {
+	color: #AA0000;
+	background-color: #EECC88;
+	margin: 30px 10px 10px 10px;
+	padding: 10px 10px 10px 50px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #000055;
+	width: 480px; /*adicionado para diminuir o tamanho*/
+    font-size: 24px;
+}
+.listaTipos ul {
+	color: #AA0000;
+	list-style-type: circle;
+}
+
+/*acrescentado para página estoque.html*/
+
+.tabInfo {
+    border-collapse: collapse;
+    border-style: solid;
+    background-color: #EECC88;
+    color: #000066;
+    font-family: 'Arial','Ubuntu';
+    margin-top: 6px;
+}
+.tabInfo td, .tabInfo th, .tabInfo img {
+     border-width: 3px;
+     border-style: solid;
+     border-color: #226699;
+     padding: 6px 12px 6px 12px;
+}
+.tabInfo .titulo {
+     color: #FFFF22;
+     background-color: #449977;
+     font-size: 24px;
+     text-align: center;
+     font-weight: bold;
+}
+.tabInfo .linTH {
+     color: #FFFFFF;
+     background-color: #33AA66;
+     vertical-align: middle;
+     text-align: center;
+}
+.tabInfo .colTH {
+     color: #FFFFFF;
+     background-color: #1188CC;
+     text-align: left;
+}
+.tabInfo .preco {
+     color: #EE0000;
+     font-weight: bold;
+     vertical-align: middle;
+}
+.tabInfo .imgCell {
+     background-color: #FFFFFF;
+}
+.imgCell img {
+	 height: 60px;
+     width:60px;
+}
+
+/*acrescentado para página cadastro.html*/
+fieldset {
+	 margin: 20px 10px 0px 10px;
+}
+fieldset .fsEsq {
+	 margin: 0px;
+	 float: left;
+	 display: inline;
+}
+fieldset .fsDir {
+	 margin: 0px;
+	 float: right;
+	 display: inline;
+}
+.botoes {
+     text-align: right;
+     margin: 20px 10px 0px 10px;
+}
+.divLinha {
+	 width: 480px;
+     margin-bottom: 6px;
+}
+.colPri {
+	 float: left;
+	 display: block;
+	 width: 90px;
+}
+.elemDir {
+	 float: right;
+	 display: block;
+}
+.inpGrande {
+     width: 370px;
+}
+.inpMedio {
+     width: 120px;
+}
+.numDD {
+     width: 30px;
+}
+.numQD {
+     width: 50px;
+}
+.divLinha2 {   /*adicionado para acertar o tamanho*/
+     width: 550px;
+     margin-bottom: 6px;
+}
+/*acrescentado para página compras.html*/
+fieldset .fsEsqCompras {
+     float: left;
+     display: inline;
+}
+fieldset .fsDirCompras {
+     float: right;
+     display: inline;
+}
+.linhacompras {
+	 width: 500px;
+	 margin-bottom: 6px;
+}
+.colPriCompras {
+	 float: left;
+	 display: block;
+	 width: 86px;
+}
+.inpEmail {
+	 width: 200px;
+}
+.subtitulo {
+	font-weight: bold;
+    font-style: italic; 
+}
+.divLinha3 {       /*adicionado para acertar o tamanho*/
+	 width: 650px;
+     margin-bottom: 6px;
+}
+/*estilos para alinhamento das paginas forno e fogão*/
+.imagemTipos {
+    width: 160px;
+    height: 160px;
+    padding: 12px;
+    border: 3px solid blue;
+    background-color: white;
+    margin-left: 70px;
+}
+.alinhar {
+    margin-left: 120px;
+}
+.conteudo {
+    float: left;
+    width: 100%;
+}
+
+/*estilos para pagina estoques*/
+.precojs {
+    color: #FF1111;
+    font-size: 16px;
+    font-family: 'Stoke','Verdana','Liberation' ;
+    text-align: center;
+}

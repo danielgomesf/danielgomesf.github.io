@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+     <head>
+       <meta charset="UTF-8">
+       <link rel="stylesheet" type="text/css" href="../CSS/folha_estilo.css">
+       <link href='https://fonts.googleapis.com/css?family=Stoke' rel='stylesheet'>
+       <title>
+         Rio 200 graus
+       </title>
+
+      </head>  
+      <body> 
+        <header>
+            <span class="imgLogo" > <img src="../img/Rio200deitado.png"> </span>
+
+             <address class="ender"> Avenida atacama,200 <br> 
+       	       Tel:(21) 98765-4321 <br>
+       	       <a href="mailto:contato@hotashell.com.br">contato@hotashell.com.br</a> 
+             </address>
+
+        </header>
+        <nav>
+             <ul>
+       	         <li> <a href="../index.html" target="_blank">Inicial </a> </li>
+                 <li> <a href="tipos.html" target="_blank">Tipos </a> </li>
+                 <li> <a href="estoque.html" target="_blank">Estoque </a> </li>
+                 <li> <a href="cadastro.html" target="_blank">Cadastro </a> </li>
+                 <li> <a href="compras.html" target="_blank">Compras </a> </li> 
+             </ul>
+        </nav>
+        <section>  
+         <h3> Compras </h3>
+          <form method="post">
+           <div class="divLinha3">
+            <fieldset class="fsEsqCompras"> <legend> Identificação </legend>
+               <label for="email" class="colPriCompras"> E-mail: </label> 
+               <input type="email" name="email" id="email" class="inpEmail">
+               <label for="senha"> Senha: </label> 
+               <input type="password" name="senha" id="senha" class="inpMedio">
+               <p class="subtitulo"> Se você ainda não tem cadastro clique <a href="cadastro.html" target="_blank">aqui</a>!</p>
+            </fieldset>
+            <fieldset> <legend> Lista de Compras e Pagamento</legend>
+               <div>
+                 <textarea class="elemDir" id="lista" rows="14" cols="20" readonly>
+                 </textarea> 
+              </div>
+              <div class="linhaCompras">
+                <label for="produtos"> Produtos:</label> 
+              </div>
+              <div class="linhaCompras">
+              <select name="selecionarProd" id="selecionarProd"> 
+                <option selected>
+                 -------
+                </option>
+              </select>
+              <input type="button" value="Comprar" onclick="Comprar(this.form)">
+              </div>
+              <fieldset class="fsEsqCompras"> <legend> Dados do Cartão</legend>
+                <fieldset class="fsEsq"> <legend> Bandeira: </legend>
+                  <div class="linhaCompras">
+                  <input type="radio" name="cartao" value="visa" checked> Visa
+                  <input type="radio" name="cartao" value="master"> Master
+                  <input type="radio" name="cartao" value="elo"> Elo
+                  </div>
+                </fieldset>
+                <br><br><br><br>
+                <div class="linhaCompras">
+                  <label for="validade"> Validade: </label>
+                  <input type="number" name="mes" min="1" max="12" value="1" class="numDD"> /
+                  <input type="number" name="ano" min="2019" max="2026" value="2019" class="numQD">
+                </div>
+                <br>
+                <div class="linhaCompras">
+                  <label for="numero" class="colPriCompras"> Número: </label>
+                  <input type="text" name="numero" class="inpEmail">
+                </div>
+              </fieldset>
+              <div class="linhaCompras"> <br clear="right"> <br>
+                <label for="valor" class="elemDir"> Valor: R$
+                <input type="text" name="valor" class="inpMedio" id="total" readonly> </label>
+              </div>
+            </fieldset>
+             <div class="botoes">
+              <input type=submit name="envia" value="Enviar">
+              <input type=reset name="limpa" value="Limpar">
+            </div>
+           </div> 
+          </form>
+        </section>
+        <script src="../Javascript/Javascript.js"> </script>
+     </body>
+ </html>

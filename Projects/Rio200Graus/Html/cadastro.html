@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+     <head>
+       <meta charset="UTF-8">
+       <link rel="stylesheet" type="text/css" href="../CSS/folha_estilo.css">
+       <link href='https://fonts.googleapis.com/css?family=Stoke' rel='stylesheet'>
+       <script src="../Javascript/Javascript.js"> </script>
+       <title>
+         Rio 200 graus
+       </title>
+
+      </head>  
+      <body> 
+        <header>
+            <span class="imgLogo" > <img src="../img/Rio200deitado.png"> </span>
+
+             <address class="ender"> Avenida atacama,200 <br> 
+       	       Tel:(21) 98765-4321 <br>
+       	       <a href="mailto:contato@hotashell.com.br">contato@hotashell.com.br</a> 
+             </address>
+
+        </header>
+        <nav>
+             <ul>
+       	         <li> <a href="../index.html" target="_blank">Inicial </a> </li>
+                 <li> <a href="tipos.html" target="_blank">Tipos </a> </li>
+                 <li> <a href="estoque.html" target="_blank">Estoque </a> </li>
+                 <li> <a href="cadastro.html" target="_blank">Cadastro </a> </li>
+                 <li> <a href="compras.html" target="_blank">Compras </a> </li> 
+             </ul>
+        </nav>
+        <section>  
+         <h3> Cadastro </h3> 
+         <form method="post">
+           <div class="divLinha2">
+            <fieldset class="fsEsq"> <legend> Identificação </legend>
+              <div class="divLinha"> 
+                <label for="email" class="colPri"> E-mail: </label> 
+                <input type="email" name="email" id="email" class="inpGrande">
+              </div>
+              <div class="divLinha">  
+                <label for="senha" class="colPri"> Senha: </label> 
+                <input type="password" name="senha" id="senha" class="inpMedio">
+                <label for="confirme" class="elemDir"> Confirme: 
+                <input type="password" name="senha" id="confirme" class="inpMedio"> </label>
+              </div>
+            </fieldset>
+            
+            <fieldset class="fsEsq"> <legend> Dados Pessoais </legend>
+              <div class="divLinha"> 
+                <label for="nome" class="colPri"> Nome: </label> 
+                <input type="text" name="nome" id="nome" class="inpGrande"> 
+              </div>
+              <div class="divLinha"> 
+                <label for="endereco" class="colPri"> Endereço: </label> 
+                <textarea name="endereço" id="endereco" rows="2" cols="52"> </textarea>
+              </div>
+              <div class="divLinha"> 
+                <label for="telefone" class="colPri"> Telefone: </label> 
+                <input type="tel" name="Fixo" id="telefone" class="inpMedio" onchange="validar(this, 8)">
+                <label for="celular" class="elemDir"> Celular:
+                <input type="tel" name="Celular" id="celular" class="inpMedio" onchange="validar(this, 9)"> </label>
+              </div>
+                <fieldset class="fsEsq"> <legend> Nascimento: </legend>
+                   <input type="number" name="dia" min="1" max="31" class="numDD"> /
+                   <input type="number" name="mes" min="1" max="12" class="numDD"> /
+                  <input type="number" name="ano" min="1920" max="2000" value="1980" class="numQD"> 
+                </fieldset>
+                <fieldset class="fsDir"> <legend> Sexo: </legend>
+                   <input type="radio" name="sexo" value="m" checked> Masculino 
+                   <input type="radio" name="sexo" value="f"> Feminino 
+                </fieldset>
+            </fieldset>
+            <div class="botoes">
+              <input type=submit name="envia" value="Enviar">
+              <input type=reset name="limpa" value="Limpar">
+            </div>
+           </div> 
+          </form>    
+        </section>
+     </body>
+ </html>
