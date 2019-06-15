@@ -2,13 +2,178 @@
 <html lang="pt-br">
     <head>
       <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <link rel="stylesheet" type="text/css" href="LandingPage.css">
       <link href="https://fonts.googleapis.com/css?family=Arvo|Roboto&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <title> </title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  	  <script src="https://kit.fontawesome.com/6db4d52976.js"></script>
+      <title> Guitar Store </title>
     </head>
     <body>
-    	
+    	<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top justify-content-center">
+    		<a href="#topo" title="" class="navbar-brand"> Guitar Store </a>
+    		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar">
+    			<span class="navbar-toggler-icon"></span>
+    		</button>
+    		<div class="collapse navbar-collapse" id="collapsenavbar">
+    			<ul class="navbar-nav mr-auto">
+    				<li class="navbar-item mr-sm-2">
+    					<a href="#carac" title="" class="navbar-link"> Características</a>
+    				</li>
+    				<li class="navbar-item mr-sm-2">
+    					<a href="#fotos" title="" class="navbar-link"> Fotos</a>
+    				</li>
+    				<li class="navbar-item mr-sm-2">
+    					<a href="#preço" title="" class="navbar-link"> Preços</a>
+    				</li>
+    			</ul>
+    		</div>	
+    	</nav>
+    	<div class="container-fluid" id="topo">
+    		<h1 class="text-center text-primary "> Instrumentos de qualidade, feitos à mão</h1>
+    		<div class="row">
+    			<div class="col-sm-4">
+    			</div> 
+    			<div class="col-sm-4">
+    				<form class="form-inline pt-5">
+    					<label for="email" class="mr-sm-2"></label>
+    					<input type="email" name="email" placeholder="Insira seu e-mail" id="email" class="form-control mr-sm-2 mb-2 ">
+ 					</form>   			
+    			</div>
+    			<div class="col-sm-4">
+    			</div> 
+    		</div>
+    		<div class="row">
+    			<div class="col-sm-4">
+    			</div> 
+    			<div class="col-sm-2 text-center">	
+    				<form class="form">	
+    					<button class="btn btn-primary mb-2" type="submit"> Enviar </button>
+    				</form>
+    			</div>	
+    			<div class="col-sm-6" id="carac">
+    			</div> 
+    		</div>
+    		<div class=" p-5 m-5">		
+    			<div class="row">
+    				<div class="col-3 text-right">
+    					<i class="fas fa-3x fa-guitar"></i>
+    				</div>
+    				<div class="col-7">
+    					<h2 class="text-left text-primary"> Materiais Premium </h2>
+    					<p class="text-left"> Nossas guitarras usam as madeiras mais nobres e os acabamentos mais modernos. Assim seu instrumento tem uma longevidade muito maior. </p>
+    			</div>
+    			<div class="row">
+    				<div class="col-3 text-right">
+    					<i class="fas fa-3x fa-truck"></i>
+    				</div>	
+    				<div class="col-7">
+    					<h2 class="text-left text-primary"> Rápida entrega</h2>
+    					<p class="text-left"> Entregamos para qualquer lugar do mundo em até 15 dias. Retornamos seu dinheiro em caso de problemas durante a entrega. </p>
+    			</div>		
+    			<div class="row">	
+    		    	<div class="col-3 text-right">
+    					<i class="fas fa-3x fa-check-square"></i>
+    				</div>
+    				<div class="col-7">
+    					<h2 class="text-left text-primary"> Qualidade Assegurada </h2>
+    					<p class="text-left"> Asseguramos a qualidade do nosso produto com uma equipe de controle de qualidade. Testamos e certificamos todos os intrumentos antes do envio.</p>
+    	 			</div>
+    			</div>
+    		</div>	
+    		<div class="carousel slide p-5"id="fotos" data-ride="carousel">
+    			<ul class="carousel-indicators">
+    				<li data-target="#fotos" data-slide-to="0" class="active bg-dark"></li>
+    				<li data-target="#fotos" data-slide-to="1" class="bg-dark"></li>
+    				<li data-target="#fotos" data-slide-to="2" class="bg-dark"></li>
+    			</ul>
+    			<div class="carousel-inner">
+    				<div class="carousel-item active">
+    					<img src="guitarra1.jpg" alt="" width="800" height="400">
+    				</div>
+    				<div class="carousel-item">
+    					<img src="guitarra2.jpg" alt="" width="800" height="400">
+    				</div>
+    				<div class="carousel-item">
+    					<img src="guitarra3.jpg" alt="" width="800" height="400">
+    				</div>
+    			</div>
+    			<a class="carousel-control-prev" href="#fotos" data-slide="prev">
+    				<span class="carousel-control-prev-icon"></span>
+    			</a>
+    			<a class="carousel-control-next" href="#fotos" data-slide="next">
+    				<span class="carousel-control-next-icon"></span>
+    			</a>
+    		</div>
+
+    		<div class="row jumbotron jumbotron-fluid p-5" id="preço">
+    			<div class="col-md-4">
+    			<a href="#guitarra1" class="btn btn-secondary" data-toggle="collapse"> Guitarra Elétrica </a>
+  					<div id="guitarra1" class="collapse">
+  						<table class="table table-dark">
+  							<tr>
+  								<td> </td>
+  							</tr>
+  							<tr>	
+  								<td> </td>
+  							</tr>
+  							<tr>	
+  								<td> </td>
+  							</tr>
+  							<tr>	
+  								<td> </td>
+  							</tr>
+  						</table>
+  						<button class="btn btn-primary mb-2" type="submit"> Selecionar </button>
+  					</div>	
+    			</div>
+    			<div class="col-md-4">
+    			<a href="#guitarra2" class="btn btn-secondary" data-toggle="collapse"> Guitarra Semi Acustica </a>
+  					<div id="guitarra2" class="collapse">
+  						<table class="table table-dark">
+  							<tr>
+  								<td> </td>
+  							</tr>
+  							<tr>	
+  								<td> </td>
+  							</tr>
+  							<tr>	
+  								<td> </td>
+  							</tr>
+  							<tr>	
+  								<td> </td>
+  							</tr>
+  						</table>
+  						<button class="btn btn-primary mb-2" type="submit"> Selecionar </button>
+  					</div>		
+    			</div>
+    			<div class="col-md-4">
+    			<a href="#guitarra3" class="btn btn-secondary" data-toggle="collapse"> Violão </a>
+  					<div id="guitarra3" class="collapse">
+  						<table class="table table-dark">
+  							<tr>
+  								<td> </td>
+  							</tr>
+  							<tr>	
+  								<td> </td>
+  							</tr>
+  							<tr>	
+  								<td> </td>
+  							</tr>
+  							<tr>	
+  								<td> </td>
+  							</tr>
+  						</table>
+  						<button class="btn btn-primary mb-2" type="submit"> Selecionar </button>
+  					</div>		
+    			</div>
+    		</div>
+    	</div>
+    	<footer>
+    		
+    	</footer>
     </body>
 </html>  
