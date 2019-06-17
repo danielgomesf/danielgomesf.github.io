@@ -1,7 +1,6 @@
 /*estrutura principal da página*/
 
 html {
-  font-family: 'Open Sans', sans-serif;
   font-family: 'Roboto Condensed', sans-serif;
   scroll-behavior: smooth;
 }
