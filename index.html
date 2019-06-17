@@ -4,10 +4,11 @@
       <meta charset="UTF-8">
       <meta name="description" content="Portfólio de programção e web desgin de Daniel Gomes Falcão">
       <meta name="robots" content="index">
-      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+      <meta name="theme-color" content="#000000">
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="CSS/CSS.css"> 
-      <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+      <script src="https://kit.fontawesome.com/6db4d52976.js"></script>
  
       <title>
         Portfólio Daniel Gomes Falcão
@@ -20,17 +21,17 @@
         <h1 id="inicio" class="h"> Olá,<br> Eu sou Daniel, <br> Programador e <br> Web Designer. </h1>
         <div style="text-align: center;">
           <span class="botoes2">
-            <a href="#sobre"> <i class="setaParaBaixo"></i> </a>
+            <a href="#sobre" aria-label="Use esse botão para descer"> <i class="setaParaBaixo"></i> </a>
           </span>
         </div>
        </header>
        <nav class="menu" id="meuNav">
-          <a href="#inicio"> Inicio </a>
-          <a href="#sobre"> Sobre </a>
-          <a href="#habilidades"> Habilidades </a>
-          <a href="#trabalhos"> Trabalhos </a>
-          <a href="#contato"> Contato </a>
-          <a href="javascript:void(0)" class="icon" onclick="abrirmenu()"> <ion-icon name="menu"></ion-icon> </a>
+          <a href="#inicio" aria-label="Vá para o inicio"> Inicio </a>
+          <a href="#sobre" aria-label="Vá para a seção sobre"> Sobre </a>
+          <a href="#habilidades" aria-label="Vá para a seção habilidades"> Habilidades </a>
+          <a href="#trabalhos" aria-label="Vá para a seção trabalhos"> Trabalhos </a>
+          <a href="#contato" aria-label="Vá para a seção contato"> Contato </a>
+          <a href="javascript:void(0)" class="icon" onclick="abrirmenu()" aria-label="Abra o menu com links"> <ion-icon name="menu"></ion-icon> </a>
        </nav>
        <section>
         <fieldset id="sobre">
@@ -121,46 +122,40 @@
                 </a>
                 <div class="legenda"> <p> Landing Page - Guitar Store</p> </div>
               </div>
-               <div class="coluna">
-                <img src="">
-              </div>
-               <div class="coluna">
-                <img src="">
-              </div>
           </div>
         <fieldset id="contato">
         <h2 class="h"> Entre em contato </h2>
         <fieldset class="alinhamFdEsq">
         <div class="contato">
-          <img src="IMG/phone-icon.png" class="icone icone1">
+         <i class="fas fa-3x fa-phone-square-alt icone icone1"></i>
           <h4 class="espaco2"> Telefone </h4>
             <p class="espaco3"> +55 (21) 99361-9393  </p> 
-          <img src="IMG/email-icon.png" class="icone">
+          <i class="fas fa-3x fa-envelope-square icone"></i>
           <h4 class="espaco2"> E-mail </h4>
             <p class="espaco3"> danielgomesfalcao@gmail.com </p>
         </div>
         </fieldset>
         <fieldset class="alinhamFdDir">
         <div>
-        <form name="formulario" method="post" id="contato">
+        <form name="formulario" method="post" id="contatoFormulario">
           <div class="alerta"> Sua mensagem foi enviada!</div>
           <div class="alinhamEsq">
-            <label for="nome"></label>
-            <input type="text" name="nome" id ="nome" placeholder="Nome*" required="required">
+            <label for="nome">
+            <input type="text" name="nome" id ="nome" placeholder="Nome*" required="required"> </label>
           </div>
           <div class="divEmail ">
-            <label for="email"></label>
-            <input type="email" name="email" id="email" placeholder="E-mail*" required="required">
+            <label for="email">
+            <input type="email" name="email" id="email" placeholder="E-mail*" required="required"> </label>
           </div>
           <br>
           <div class="divAssunto">
-            <label for="assunto"></label>
-            <input type="text" name="assunto" id="assunto" placeholder="Assunto">
+            <label for="assunto">
+            <input type="text" name="assunto" id="assunto" placeholder="Assunto"> </label>
           </div>
           <br>
           <div class="alinhamEsq">
-            <label for="mensagens"></label>
-            <textarea name="mensagens" rows="18" cols="60" id="mensagens" placeholder="Mensagem*" required="required"> </textarea>
+            <label for="mensagens">
+            <textarea name="mensagens" rows="18" cols="60" id="mensagens" placeholder="Mensagem*" required="required"> </textarea> </label>
           </div>
           <button class="botoes" type="submit"> Enviar mensagem </button>
          </form>
