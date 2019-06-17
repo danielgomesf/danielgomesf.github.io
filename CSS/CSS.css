@@ -100,6 +100,11 @@ fieldset {
   font-size: 40px;
   margin: 80px;
 }
+@media screen and (max-width: 700px) {
+  header .h {
+    font-size: 78px;
+  }
+}
 .hsubtitulo {
 	font-size: 26px;
 }
@@ -194,7 +199,7 @@ i {
   overflow: hidden;
   background-color: #f1f1f1;
 }
-.fab {
+.fab, .fas {
   border: black;
 }
 /*frame fotos trabalhos*/
@@ -246,7 +251,7 @@ input[type=text],textarea,input[type=email] {
 
 }
 input[type=text],input[type=email] {
-	width: 300px;
+	width: 245px;
 } 
 button[type=submit]:hover {
   background-color: #696969;
@@ -279,19 +284,20 @@ button[type=submit]:hover {
 	float: left;
 }
 .divAssunto input[type=text] {
-	width: 630px;
+	width: 510px;
 }
 .alinhamEsq textarea {
 	margin-bottom: 0px;
 }
 .alinhamFdEsq {
-  margin: 40px;
+  margin: 20px;
+  margin-left: 0px;
   float: left;
   display: inline;
   width: 100px;
 }
 .alinhamFdDir {
-  margin: 40px;
+  margin: 20px;
   float: right;
   display: inline;
 }
