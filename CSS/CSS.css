@@ -195,6 +195,9 @@ i {
   overflow: hidden;
   background-color: #f1f1f1;
 }
+.fab {
+  border: black;
+}
 /*frame fotos trabalhos*/
 
 .fileira {
