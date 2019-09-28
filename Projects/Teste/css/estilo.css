@@ -44,10 +44,12 @@ h3, h4 {
   filter: grayscale(90%); /* make all photos black and white */
   width: 100%; /* Set width to 100% */ 
   margin: auto;
-} /*
+}
+ 
 .carousel-caption h3 {
-  color: #fff !important;
-}*/
+  color: #fff;
+}
+
 @media (max-width: 600px) {
   .carousel-caption {
     display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
@@ -154,6 +156,32 @@ ul.dropdown-menu li a:hover,
 ul.dropdown-menu li a:focus{
   background-color: #369;
 }
+#evento img{
+  shape-outside: circle();
+  clip-path: circle();
+  margin-right: 0;
+  float: none;
+  width: 100%;
+  height: auto;
+}
+@media(min-width:768px){
+  #evento img{
+    shape-outside: circle();
+    clip-path: circle();
+    margin-right: 20px;
+    width: initial;
+    float: left;
+  }
+}
+.owl-theme{
+  overflow: hidden;
+}
+.owl-item{
+  float: left;
+}
+section .owl-theme .owl-nav [class*=owl-]{
+  background: #369;
+}
 footer {
   background-color: #369; /*#2d2d30;*/
   color: #f5f5f5;
@@ -242,4 +270,25 @@ textarea {
   opacity: 1;
   background-color: #000;
   color: #fff;
+}
+@media screen and (max-width: 500px) {
+  #visivel {
+    display: none;
+  }
+  .table>tbody>tr>td,
+  .table>tbody>tr>th,
+  .table>tfoot>tr>td,
+  .table>tfoot>tr>th,
+  .table>thead>tr>td, 
+  .table>thead>tr>th {
+    padding: 6px;
+}
+}
+@media (min-width: 500px) {
+  #visivelmobile {
+    display: none;
+  }
+}
+.label-default {
+  font-size: 12px;
 }

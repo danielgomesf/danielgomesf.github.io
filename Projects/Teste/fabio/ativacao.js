@@ -27,8 +27,11 @@ $(document).ready(function(){
   });
   
   $('.owl-4').owlCarousel({
+    items:3,
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:2500,
     margin: 30,    
-		loop:false,
 		nav:true,
 		navText:['&#10094;','&#10095;'],
 		dots:false,  
@@ -47,3 +50,4 @@ $(document).ready(function(){
 	});
   
 });
+
