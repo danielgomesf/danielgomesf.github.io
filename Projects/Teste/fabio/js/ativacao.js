@@ -25,30 +25,4 @@ $(document).ready(function(){
       });
     } // End if
   });
-  
-  $('.owl-4').owlCarousel({
-    items:3,
-    loop:true,
-    autoplay:true,
-    autoplayTimeout:2500,
-    margin: 30,    
-		nav:true,
-		navText:['&#10094;','&#10095;'],
-		dots:false,  
-    responsiveClass:true,    
-		responsive:{
-			0:{
-        items:1
-      },
-      767:{
-				items:2
-			},
-      990:{
-        items:3
-      }
-		},
-	});
-  $('.play').on('open',function(){
-    owl.trigger('play.owl.autoplay',[2500])
 })
-});
