@@ -299,12 +299,6 @@ textarea {
   color: black;
   padding: -20px;
 }
-.carousel-indicators li{
-  background-color: white;
-}
-.carousel-indicators .active {
-  background-color: white;
-}
 
 .carousel-control.palestrantes.right {
   right: -100px;
