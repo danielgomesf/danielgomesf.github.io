@@ -1,0 +1,111 @@
+<section id="palestrantes">
+  <div class="container text-center">
+    <h2>Palestrantes</h2>
+    <p class="lead"><em>Confira alguns de nossos palestrantes.</em></p>
+<!-- Hans:2019/09/27:19h: Adicionados 3 palestrantes a alteradas imagens de vários outros para o formato quadrado 255x255 -->
+<div id="myCarousel2" class="carousel slide multi-item-carousel" data-ride="carousel">
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="col-sm-4">
+        <img src="img/jane-vieira.jpeg" class="img-circle person" alt="Profa. Jane Vieira Volotão" width="255" height="255">           
+        <h3 class="h4">Profa.Me. Jane Vieira Volotão</h3>
+         <p>Doutoranda em Computação da UFF - Eng. Civil Petrobras</p>
+          <p>Mini-Curso - "VBA para Excel"</p>    
+      </div>
+      <div class="col-sm-4">
+         <img src="img/carlyle-tadeu.jpeg" class="img-circle person" alt="Pós-Dr. Carlyle Tadeu Falcão de Oliveira" width="255" height="255">
+        <h3 class="h4">Pós-Dr.Carlyle Tadeu Falcão de Oliveira</h3>
+        <p>Pós-doutor em Administração pela Universidade Federal Fluminense;</p>
+        <p>Mesa Redonda: "Turismo e Educação"</p>  
+      </div>
+      <div class="col-sm-4">
+        <img src="img/hans.jpeg" class="img-circle person" alt="Hans Paul Mösl Junior" width="255" height="255">            
+        <h3 class="h4">Hans Paul Mösl Junior</h3>
+        <p>Graduando em Computação (UFF)</p>
+        <p>Palestra: "Home Office: benefícios e desafios ao se trabalhar de casa"</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="col-sm-4">
+        <img src="img/ricardo-dias.jpeg" class="img-circle person" alt="Me. Ricardo Dias da Costa" width="255" height="255">
+        <h3 class="h4">Me. Ricardo Dias da Costa</h3>
+        <p>Doutorando em Educação, Contextos Contemporâneos e Demandas Populares - UFRRJ</p>
+        <p>Mesa Redonda: "Turismo e Educação"</p> 
+      </div>
+      <div class="col-sm-4">
+        <img src="img/marcelo-azeredo.jpeg" class="img-circle person" alt="Prof. Marcelo Azeredo" width="255" height="255">
+        <h3 class="h4">Prof. Marcelo Azeredo</h3>
+        <p>Secretário de Educação SG.</p>
+        <p>Palestra "Liderança e Motivação"</p> 
+      </div>
+      <div class="col-sm-4">
+        <img src="img/daniel.jpeg" class="img-circle person" alt="Daniel Gomes Falcão" width="255" height="255">            
+        <h3 class="h4">Daniel Gomes Falcão</h3>
+        <p> Aluno de Sistemas de Computação - Jovem Aprendiz na OLX </p>
+        <p> Minicurso Git e Github</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="col-sm-4">
+        <img src="img/fabiana-monteiro.jpeg" class="img-circle person" alt="Profa. Fabiana Monteiro de Oliveira" width="255" height="255">            
+        <h3 class="h4">Profa. Fabiana Monteiro de Oliveira</h3>
+        <p>Dra. Profa. do Dep. de Físico-Química UFF</p>
+        <p>"Datação de radiocarbono usando espectrometria de massa com acelerador"</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="img/wangles.jpeg" class="img-circle person" alt="Prof.Esp. Wangles Silva" width="255" height="255">          
+        <h3 class="h4">Prof.Esp. Wangles Silva</h3>
+        <p>Mestrando em Preservação e Gestão do Patrimônio Cultural das Ciências e da Saúde - FIOCRUZ;</p>        
+        <p>Mesa Redonda: "Turismo"</p>          
+      </div>
+      <div class="col-sm-4">
+        <img src="img/mateus-nascimento.jpeg" class="img-circle person" alt="Prof. Mateus Nascimento" width="255" height="255">           
+        <h3 class="h4">Prof. Mateus Nascimento</h3>
+        <p>Mestrando em História Social pela Universidade Federal Fluminense.</p>        
+        <p>A Arte da Guerra Chinesa: conselhos antigos para uma vida melhor hoje</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="col-sm-4">
+        <img src="img/maria-silva.jpeg" class="img-circle person" alt="Profa. Maria Silva" width="255" height="255">           
+        <h3 class="h4">Profa. Maria Silva</h3>
+        <p>Vice presidente da Associação Kung Fu Garra de Águia Gonçalense do Estado do Rio de janeiro</p>        
+        <p>Os Benefícios do Kung Fu Tai Chi Chuan</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="img/anselmo.jpeg" class="img-circle person" alt="Prof. Anselmo Luiz Éden Battisti" width="255" height="255">            
+        <h3 class="h4">Prof. Anselmo Luiz Éden Battisti</h3>
+        <p>Me. Administração Estratégia/PUCPR - Mestrando Computação - UFF </p>
+        <p>"Marketing Digital, SEO e Desenvolvimento Web"</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="img/andrea.webp" class="img-circle person" alt="Andréa e Silva Oppenheimer" width="255" height="255">            
+        <h3 class="h4">Andréa e Silva Oppenheimer</h3>
+        <p> Discente do Curso de pós-graduação lato sensu em Turismo Cultural (USU/IPN) </p>
+        <p>A preservação dos bens tombados como fomento do turismo: o caso da Estação Ferroviária Barão de Mauá</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="col-sm-4">
+         <img src="img/marlen-ramalho.jpeg" class="img-circle person" alt="Profª Ms. Marlen Ramalho" width="255" height="255">            
+        <h3 class="h4">Profª Me. Marlen Ramalho</h3>
+        <p>Doutoranda em Psicossociologia de Comunidades e Ecologia Social-UFRRJ</p>
+        <p>"A Teoria Ator-Rede e o caso da trilha do telégrafo no Rio de Janeiro"</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="img/antonio.jpeg" class="img-circle person" alt="Prof.José Antônio Ferreira Machado" width="255" height="255">            
+        <h3 class="h4">Prof.José Antônio Ferreira Machado</h3>
+        <p>Subsecretário de Esporte e Lazer - SG</p>
+        <p>"O inventário turístico de São Gonçalo e suas ofertas turísticas" </p>
+      </div>
+      <div class="col-sm-4">
+         <img src="img/jane-marcia.jpeg" class="img-circle person" alt="Profª Jane Márcia Scorzelli" width="255" height="255">            
+        <h3 class="h4">Profª Jane Márcia Scorzelli</h3>
+        <p> Turismóloga (UNIPLI)- Mestre em Geologia (UFRJ)</p>
+        <p>"Metodologia de pesquisa: elementos para a produção"</p>
+      </div>
+    </div>   
+  </div>

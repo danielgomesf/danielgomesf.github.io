@@ -1,0 +1,26 @@
+.carousel-control.palestrantes.right, .carousel-control.palestrantes.left {
+  background-image: linear-gradient(to right,rgba(0,0,0,.0) 0,rgba(0,0,0,.0) 100%) !important;
+}
+
+.setas {
+  color: black;
+  padding: -20px;
+}
+
+.carousel-control.palestrantes.right {
+  right: -100px;
+}
+
+.carousel-control.palestrantes.left {
+  left: -100px;
+}
+
+@media (max-width: 500px) {
+  .carousel-control.palestrantes.right {
+  right: -10px;
+  }
+
+  .carousel-control.palestrantes.left {
+    left: -10px;
+  }
+}
